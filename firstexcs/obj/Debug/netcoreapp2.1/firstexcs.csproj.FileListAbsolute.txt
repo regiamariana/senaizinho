@@ -1,0 +1,11 @@
+C:\Users\47425337800\Documents\c#\twevethproject\firstexcs\bin\Debug\netcoreapp2.1\firstexcs.deps.json
+C:\Users\47425337800\Documents\c#\twevethproject\firstexcs\bin\Debug\netcoreapp2.1\firstexcs.runtimeconfig.json
+C:\Users\47425337800\Documents\c#\twevethproject\firstexcs\bin\Debug\netcoreapp2.1\firstexcs.runtimeconfig.dev.json
+C:\Users\47425337800\Documents\c#\twevethproject\firstexcs\bin\Debug\netcoreapp2.1\firstexcs.dll
+C:\Users\47425337800\Documents\c#\twevethproject\firstexcs\bin\Debug\netcoreapp2.1\firstexcs.pdb
+C:\Users\47425337800\Documents\c#\twevethproject\firstexcs\obj\Debug\netcoreapp2.1\firstexcs.csprojAssemblyReference.cache
+C:\Users\47425337800\Documents\c#\twevethproject\firstexcs\obj\Debug\netcoreapp2.1\firstexcs.csproj.CoreCompileInputs.cache
+C:\Users\47425337800\Documents\c#\twevethproject\firstexcs\obj\Debug\netcoreapp2.1\firstexcs.AssemblyInfoInputs.cache
+C:\Users\47425337800\Documents\c#\twevethproject\firstexcs\obj\Debug\netcoreapp2.1\firstexcs.AssemblyInfo.cs
+C:\Users\47425337800\Documents\c#\twevethproject\firstexcs\obj\Debug\netcoreapp2.1\firstexcs.dll
+C:\Users\47425337800\Documents\c#\twevethproject\firstexcs\obj\Debug\netcoreapp2.1\firstexcs.pdb
