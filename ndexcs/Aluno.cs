@@ -1,11 +1,15 @@
+using System;
+
 namespace ndexcs
 {
     public class Aluno
     {
-        string nome {get; set;}
+        public string Nome {get; set;}
 
-        string curso{get; set;}
+        public string curso {get; set;}
 
-        int numeroSala{get; set;}
+         public DateTime dataNascimento;
+
+        public int numeroSala {get; set;}
     }
 }

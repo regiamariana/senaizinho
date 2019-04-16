@@ -1,14 +1,18 @@
+using System;
+
 namespace ndexcs
 {
     public class Sala
     {
-        int numeroSala {get; set;}
+        public int numeroSala {get; set;}
 
-        int capacidadeAtual {get; set;} 
+        public int capacidadeAtual {get; set;} 
 
-        int capacidadeTotal {get; set;}
+        public int capacidadeTotal {get; set;}
 
-        string alunos {get; set;}
+        public string alocarAluno (int capacidadeTotal);
+
+        public string [] alunos {get; set;}
 
     }
 }

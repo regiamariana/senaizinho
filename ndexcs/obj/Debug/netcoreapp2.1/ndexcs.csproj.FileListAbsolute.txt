@@ -1,0 +1,4 @@
+C:\Users\47425337800\Documents\c#\twelfthproject\senaizinho\ndexcs\obj\Debug\netcoreapp2.1\ndexcs.csprojAssemblyReference.cache
+C:\Users\47425337800\Documents\c#\twelfthproject\senaizinho\ndexcs\obj\Debug\netcoreapp2.1\ndexcs.csproj.CoreCompileInputs.cache
+C:\Users\47425337800\Documents\c#\twelfthproject\senaizinho\ndexcs\obj\Debug\netcoreapp2.1\ndexcs.AssemblyInfoInputs.cache
+C:\Users\47425337800\Documents\c#\twelfthproject\senaizinho\ndexcs\obj\Debug\netcoreapp2.1\ndexcs.AssemblyInfo.cs
