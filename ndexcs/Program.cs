@@ -23,11 +23,11 @@ namespace ndexcs
             System.Console.WriteLine("Escolha uma opção: ");
             int respostaUsuario = int.Parse(Console.ReadLine());
 
-            switch (respostaUsuario)
-            {
+            switch (respostaUsuario){
+            
                 case 1:
-                if(contadorAluno > 4){
                 Aluno a = new Aluno();
+                if(contadorAluno > 4)
                 System.Console.WriteLine("digite o nome do abençoado");
                 a.Nome = Console.ReadLine();
                 System.Console.WriteLine("digite a data de nascimento");
@@ -36,10 +36,12 @@ namespace ndexcs
                 System.Console.WriteLine("digite o número da sala");
                 a.numeroSala = int.Parse(Console.ReadLine());
                 novoAluno[contadorAluno] = a;
-                contadorAluno++;}
+                contadorAluno++;
 
                 System.Console.WriteLine("vc se cadastrou com sucesso");
+            
                 break;
+
                 case 2: 
                 Sala s = new Sala();
                 System.Console.WriteLine("digite a sala");
@@ -54,17 +56,120 @@ namespace ndexcs
                 string[]alunos = new string [s.capacidadeTotal];
                 salas[contadorSala] = s;
                 contadorSala++; 
+                Console.ForegroundColor = ConsoleColor.Green;
                 System.Console.WriteLine("vc se cadastrou com sucesso");
+                Console.ResetColor();
+                System.Console.WriteLine("aperte enter para voltar ao menu");
+                Console.ReadLine();
                 break;
+
+
+
                 case 3: 
-                System.Console.WriteLine("digite o nome do abençoado");
-                string nomeA = Console.ReadLine();
-                System.Console.WriteLine("agora digite a sala q ele vai");
-                int salaAluno = int.Parse(Console.ReadLine());
+                if(contadorAluno == 0){
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    System.Console.WriteLine("não há aluno cadastrado");
+                    Console.ResetColor();
+                    System.Console.WriteLine("aperte enter para voltar ao menu");
+                    Console.ReadLine();
+                    continue;
+                }
+                System.Console.WriteLine("dgite o nome do abençoado");
+                string nomeAlunoAloc = Console.ReadLine();
+
+                Aluno alunoRecuperadoAloc =null;
+
+                foreach (Aluno item in novoAluno){
+                    if(item != null && nomeAlunoAloc.Equals(item)){
+                        alunoRecuperadoAloc = item;
+                        break;
+                    }
+                }
+                if (alunoRecuperadoAloc == null) {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    System.Console.WriteLine("não há aluno cadastrado");
+                    Console.ResetColor();
+                    System.Console.WriteLine("aperte enter para voltar ao menu");
+                    Console.ReadLine();
+                }
+
+                    //COMEÇODASALAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                 System.Console.WriteLine("dgite o número da sala");
+                string numeroSala = Console.ReadLine();
+
+                Aluno salaRecuperadaAloc =null;
+
+                foreach (Sala item in salas){
+                    if(item != null && nomeAlunoAloc.Equals(item.numeroSala)){
+                        salaRecuperadaAloc = item.numeroSala;
+                        break;
+                    }
+                }
+                if (salaRecuperadaAloc == null) {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    System.Console.WriteLine("não há sala cadastrado");
+                    Console.ResetColor();
+                    System.Console.WriteLine("aperte enter para voltar ao menu");
+                    Console.ReadLine();
+                }
+
+                salaRecuperadaAloc.alocarAluno(alunoRecuperadoAloc.Nome);
                 break;
                 
+
+
+
                 case 4:
-                System.Console.WriteLine("");
+                if(contadorAluno == 0){
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    System.Console.WriteLine("não há aluno cadastrado");
+                    Console.ResetColor();
+                    System.Console.WriteLine("aperte enter para voltar ao menu");
+                    Console.ReadLine();
+                    continue;
+                }
+                System.Console.WriteLine("dgite o nome do abençoado");
+                string nomeAlunoAloc = Console.ReadLine();
+
+                Aluno alunoRecuperadoAloc =null;
+
+                foreach (Aluno item in novoAluno){
+                    if(item != null && nomeAlunoAloc.Equals(item)){
+                        alunoRecuperadoAloc = item;
+                        break;
+                    }
+                }
+                if (alunoRecuperadoAloc == null) {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    System.Console.WriteLine("não há aluno cadastrado");
+                    Console.ResetColor();
+                    System.Console.WriteLine("aperte enter para voltar ao menu");
+                    Console.ReadLine();
+                }
+
+                    //COMEÇODASALAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                 System.Console.WriteLine("dgite o número da sala");
+                string numeroSala = Console.ReadLine();
+
+                Aluno salaRecuperadaAloc =null;
+
+                foreach (Sala item in salas){
+                    if(item != null && nomeAlunoAloc.Equals(item.numeroSala)){
+                        salaRecuperadaAloc = item.numeroSala;
+                        break;
+                    }
+                }
+                if (salaRecuperadaAloc == null) {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    System.Console.WriteLine("não há sala cadastrado");
+                    Console.ResetColor();
+                    System.Console.WriteLine("aperte enter para voltar ao menu");
+                    Console.ReadLine();
+                }
+
+                salaRecuperadaAloc.alocarAluno(alunoRecuperadoAloc.Nome);
+                break;
+                
                 break;
 
                 case 5:
